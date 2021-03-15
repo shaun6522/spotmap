@@ -1,0 +1,77 @@
+/* Hello you! */
+
+* {
+  font-family: helvetica;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  height: 100vh;
+  width: 100vw;
+}
+
+#openbutton {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 10px;
+  width:2vw;
+  height:2vw;
+}
+
+@media (max-width: 800px) {
+  #openbutton {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+    width:4vh;
+    height:4vh;
+  }
+}
+
+#mapid {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+textarea {
+  resize: none;
+  font-family: sans-serif;
+  line-height: 1.5em;
+}
+
+input {
+  resize: none;
+  font-family: sans-serif;
+  line-height: 1.5em;
+}
+
+.infobox {
+  border-radius: 10px;
+  padding: 10px;
+  height: auto;
+  width: auto;
+  background: rgb(104, 104, 104); /* Fallback for older browsers without RGBA-support */
+  background: rgba(104, 104, 104, 0.7);
+  position: absolute;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  
+}
