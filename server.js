@@ -41,7 +41,6 @@ app.get("/", (request, response) => {
 });
 
 app.post("/", (request, response) => {
-    console.log(request.get('host'));
     if (request.get('host') == "pk-spot-map.herokuapp.com") {
       MongoClient.connect(url, function(err, db) {
         if (err) throw err;
