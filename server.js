@@ -45,7 +45,7 @@ app.post("/", (request, response) => {
       MongoClient.connect(url, function(err, db) {
         if (err) throw err;
         var dbo = db.db("spotmapdev");
-        dbo.collection("NewSpotsCollection").insertOne(request.body); //Inserts the new spot into the db
+        dbo.collection("SpotsCollection").insertOne(request.body); //Inserts the new spot into the db
         db.close();
       });
     } else {
